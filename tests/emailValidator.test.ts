@@ -2,10 +2,10 @@ import { validateEmail } from '../src/emailValidator';
 
 describe('Email Validation', () => {
 
-    it('should return true in any case', () => {
+    it('should return false if no @ symbol', () => {
         let actual = 'testvinci.be';
-
-        expect(validateEmail(actual)).toBe(true);
-    })
+        
+        expect(validateEmail(actual)).toBe(false); 
+    });
     
 });
