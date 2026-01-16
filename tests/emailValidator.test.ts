@@ -21,5 +21,13 @@ describe('Email Validation', () => {
         expect(validateEmail(before)).toBe(false);
         expect(validateEmail(after)).toBe(false);
     });
+
+    it('should return false if domain has no dot or dot is last', () => {
+        let noDot = 'leonard@vinci';
+        let lastDot = 'de@vinci.';
+
+        expect(validateEmail(noDot)).toBe(false);
+        expect(validateEmail(lastDot)).toBe(false); 
+    });
     
 });

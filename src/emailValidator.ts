@@ -8,5 +8,9 @@ export function validateEmail(email: string): boolean {
         return false;
     }
     
+    const domain = parts[1];
+    if (!domain.includes('.')) return false;
+    if (domain.lastIndexOf('.') === domain.length - 1) return false;
+
     return true;
 }
