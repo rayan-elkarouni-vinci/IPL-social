@@ -30,4 +30,8 @@ describe('Email Validation', () => {
         expect(validateEmail(lastDot)).toBe(false); 
     });
     
+    it('should return true for a valid email', () => {
+         expect(validateEmail('lesmeilleursprofsviennentde@vinci.be')).toBe(true);
+    });
+
 });
