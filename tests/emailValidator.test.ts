@@ -13,5 +13,13 @@ describe('Email Validation', () => {
 
         expect(validateEmail(actual)).toBe(false);
     });
+
+    it('should return false if no text before or after @', () => {
+        let before = '@vinci.be';
+        let after = 'mrdebeauffortestmonexemple@';
+
+        expect(validateEmail(before)).toBe(false);
+        expect(validateEmail(after)).toBe(false);
+    });
     
 });
