@@ -9,7 +9,7 @@
 * **URL GitHub :** https://github.com/rayan-elkarouni-vinci/IPL-social
 
 ## Description
-Ce projet implémente une bibliothèque de validation d'email en TypeScript, développée en suivant la méthodologie TDD (Test Driven Development). Le projet est intégré dans un pipeline CI via GitHub Actions qui exécute automatiquement les tests à chaque modification.
+Ce projet implémente une bibliothèque de validation d'email en TypeScript, développée en suivant la méthodologie TDD (Test Driven Development). Le projet est intégré dans un pipeline CI via GitHub Actions qui exécute automatiquement les tests à chaque modification dans le main.
 
 ## Règles de validation implémentées
 Conformément à l'énoncé, la fonction valide :
